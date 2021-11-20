@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap");
+html {
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+body {
+  margin: 0 auto;
+  font-family: "Roboto Mono", monospace;
+  background-color: #fffaf0;
+  width: 100%;
+}
+.container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* HEADER STYLES */
+.header {
+  font-size: 1.75rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #091315;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.02);
+  border-bottom: solid 4px #2a9d8f;
+  overflow-x: hidden;
+}
+
+.header h1 {
+  color: white;
+  margin: 10px 0;
+  /* text-decoration: underline; */
+}
+/*CONTAINER STYLES*/
+.mainContainer {
+  overflow-x: hidden;
+  margin: 5vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.itemContainer {
+  margin: 0 5px 5px 5px;
+  border: #091315 solid 2px;
+  border-radius: 14px;
+  width: 80vw;
+}
+.itemContainer h1 {
+  color: #2a9d8f;
+  margin: 0;
+  width: 100%;
+}
+.itemContainer h2 {
+  margin: 4px 0;
+}
+/*Media Queries*/
+
+/*MEDIUM*/
+@media only screen and (min-width: 650px) {
+  .mainContainer {
+    flex-direction: row;
+  }
+  .itemContainer {
+    width: 45vw;
+  }
+}
+/*LARGE*/
+@media only screen and (min-width: 930px) {
+  .mainContainer {
+    margin-top: 15vh;
+  }
+  .mainContainer h1 {
+    font-size: 2rem;
+  }
+  .itemContainer {
+    width: 30vw;
+  }
+}
+/* X-LARGE */
+@media only screen and (min-width: 1300px) {
+  .itemContainer h1 {
+    font-size: 2.2rem;
+  }
+}
